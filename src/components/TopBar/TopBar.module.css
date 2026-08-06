@@ -1,0 +1,58 @@
+.topBar {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.55rem var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  position: relative;
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: var(--color-sand);
+}
+
+.marquee {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.marquee::-webkit-scrollbar {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  right: var(--gutter);
+  display: flex;
+  color: var(--color-white);
+  opacity: 0.7;
+  font-size: 0.85rem;
+  transition: opacity var(--transition-base);
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .close {
+    right: 0.9rem;
+  }
+
+  .inner {
+    padding-right: 2.4rem;
+  }
+}

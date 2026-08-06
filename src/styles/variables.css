@@ -1,0 +1,27 @@
+:root {
+  /* Color palette */
+  --color-black: #111111;
+  --color-charcoal: #2c2c2c;
+  --color-white: #ffffff;
+  --color-sand: #d9c7a4;
+  --color-forest: #43534b;
+
+  --color-sand-light: #ecdfc3;
+  --color-charcoal-soft: #3d3d3d;
+  --color-border: rgba(17, 17, 17, 0.1);
+  --color-border-light: rgba(255, 255, 255, 0.16);
+
+  /* Typography */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
+  --max-width: 1360px;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Motion */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 0.4s var(--ease-editorial);
+}

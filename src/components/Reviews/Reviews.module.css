@@ -1,0 +1,95 @@
+.section {
+  background: var(--color-sand);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--color-black);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  margin: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.starFilled {
+  color: var(--color-forest);
+  fill: var(--color-forest);
+}
+
+.starEmpty {
+  color: var(--color-border);
+}
+
+.quote {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-charcoal);
+  font-style: normal;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: auto;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.name {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.location {
+  margin: 0.15rem 0 0;
+  font-size: 0.78rem;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+}
+
+@media (min-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

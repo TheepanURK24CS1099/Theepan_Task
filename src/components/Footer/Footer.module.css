@@ -1,0 +1,116 @@
+.footer {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: clamp(3.5rem, 7vw, 5rem) var(--gutter) 3rem;
+}
+
+.brandCol {
+  max-width: 320px;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.65;
+}
+
+.social {
+  display: flex;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-light);
+  font-size: 1rem;
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+.socialIcon:hover {
+  background: var(--color-sand);
+  color: var(--color-black);
+  border-color: var(--color-sand);
+}
+
+.linkCols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.colTitle {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-sand);
+  margin-bottom: 1.1rem;
+}
+
+.linkCol ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.linkCol a {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
+  transition: color var(--transition-base);
+}
+
+.linkCol a:hover {
+  color: var(--color-white);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem var(--gutter) 2rem;
+  border-top: 1px solid var(--color-border-light);
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.disclaimer {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+@media (min-width: 640px) {
+  .linkCols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .top {
+    grid-template-columns: 1fr 2fr;
+  }
+}
